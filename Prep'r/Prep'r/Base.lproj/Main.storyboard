@@ -5,6 +5,52 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="iDG-yd-rJc">
+            <objects>
+                <viewController id="dpt-iN-NgN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ehz-ed-14P"/>
+                        <viewControllerLayoutGuide type="bottom" id="FsV-mF-9qO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c4M-Gg-pus">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bg6-6Z-stt">
+                                <rect key="frame" x="20" y="28" width="89" height="30"/>
+                                <state key="normal" title="Add member"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eaa-wH-VPd">
+                                <rect key="frame" x="0.0" y="66" width="600" height="485"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="AIY-28-iyY">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AIY-28-iyY" id="mky-JB-F1c">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eaa-wH-VPd" secondAttribute="trailing" id="0dU-jp-ERd"/>
+                            <constraint firstItem="bg6-6Z-stt" firstAttribute="leading" secondItem="c4M-Gg-pus" secondAttribute="leading" constant="20" id="sBq-dt-Zv9"/>
+                            <constraint firstItem="bg6-6Z-stt" firstAttribute="top" secondItem="Ehz-ed-14P" secondAttribute="bottom" constant="8" id="sGN-Q0-sY8"/>
+                            <constraint firstItem="eaa-wH-VPd" firstAttribute="top" secondItem="bg6-6Z-stt" secondAttribute="bottom" constant="8" id="ucS-Tb-F4q"/>
+                            <constraint firstItem="FsV-mF-9qO" firstAttribute="top" secondItem="eaa-wH-VPd" secondAttribute="bottom" id="wfW-rt-uU6"/>
+                            <constraint firstItem="eaa-wH-VPd" firstAttribute="leading" secondItem="c4M-Gg-pus" secondAttribute="leading" id="wrg-0O-vEP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFs-zn-shs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787" y="-993"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -32,9 +78,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrh-8K-Vm0">
                                 <rect key="frame" x="319" y="49" width="75" height="30"/>
                                 <state key="normal" title="Edit group "/>
+                                <connections>
+                                    <segue destination="dpt-iN-NgN" kind="show" id="FoK-d3-ePZ"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level of Preparedness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8E6-7b-eua">
-                                <rect key="frame" x="20" y="104" width="169.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level of Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8E6-7b-eua">
+                                <rect key="frame" x="20" y="104" width="121" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
