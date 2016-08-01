@@ -17,7 +17,18 @@ class SuppliesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    func seedArray() {
+        
+        self.suppliesArray = [
+            Supply(name: "Food"),
+            Supply(name: "Water"),
+            Supply(name: "First Aid"),
+            Supply(name: "Tools"),
+            Supply(name: "Clothes"),
+            Supply(name: "Power"),
+            Supply(name: "Miscellaneous")
+        ]
+    }
     
 
 }
