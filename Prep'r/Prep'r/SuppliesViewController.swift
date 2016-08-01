@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SuppliesViewController: UIViewController {
+class SuppliesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var suppliesArray = [Supply]()
     
@@ -30,5 +30,14 @@ class SuppliesViewController: UIViewController {
         ]
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return suppliesArray.count
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        <#code#>
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        <#code#>
+    }
 
 }
