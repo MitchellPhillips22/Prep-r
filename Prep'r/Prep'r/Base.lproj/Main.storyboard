@@ -145,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="850" y="355"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6VG-3D-riG">
@@ -209,7 +209,7 @@
         <!--Supplies-->
         <scene sceneID="6mU-hx-8eo">
             <objects>
-                <viewController id="EAH-BY-qMz" sceneMemberID="viewController">
+                <viewController id="EAH-BY-qMz" customClass="SuppliesViewController" customModule="Prep_r" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kwf-0v-D91"/>
                         <viewControllerLayoutGuide type="bottom" id="eAX-9b-7rf"/>
