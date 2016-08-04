@@ -10,7 +10,9 @@ import UIKit
 
 class SuppliesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var suppliesArray = [Supply]()
+    var categoryArray = [Category]()
+    var currentCategory: Category?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,26 +21,33 @@ class SuppliesViewController: UIViewController, UITableViewDelegate, UITableView
     }
     func seedArray() {
         
-        self.suppliesArray = [
-            Supply(name: "Food"),
-            Supply(name: "Water"),
-            Supply(name: "First Aid"),
-            Supply(name: "Tools"),
-            Supply(name: "Clothes"),
-            Supply(name: "Power"),
-            Supply(name: "Miscellaneous")
+        self.categoryArray = [
+            Category(name: "Food"),
+            Category(name: "Water"),
+            Category(name: "First Aid"),
+            Category(name: "Tools"),
+            Category(name: "Clothes"),
+            Category(name: "Power"),
+            Category(name: "Miscellaneous")
         ]
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return suppliesArray.count
+        return categoryArray.count
     }
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        <#code#>
-//    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.currentCategory = categoryArray[indexPath.row]
+        self.performSegueWithIdentifier("categorySegue", sender: self)
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "categorySegue" {
+            let categoryViewController = segue.destinationViewController as! CategoryViewController
+            categoryViewController.currentCategory = self.currentCategory
+        }
+    }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("supplyCell") as! SuppliesTableViewCell
-        let category = suppliesArray[indexPath.row]
+        let category = categoryArray[indexPath.row]
         cell.supplyCategoryLabel.text = category.name
         return cell
     }
