@@ -287,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="-68" y="900"/>
         </scene>
-        <!--View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="oqV-GG-oEi">
             <objects>
-                <viewController id="KBT-TC-Jdj" sceneMemberID="viewController">
+                <viewController id="KBT-TC-Jdj" customClass="CategoryViewController" customModule="Prep_r" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KDN-wC-7zh"/>
                         <viewControllerLayoutGuide type="bottom" id="Q0P-8S-aEy"/>
