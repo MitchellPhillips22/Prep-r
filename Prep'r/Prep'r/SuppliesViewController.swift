@@ -15,7 +15,7 @@ class SuppliesViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        seedArray() 
     }
     func seedArray() {
         
@@ -33,11 +33,14 @@ class SuppliesViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return suppliesArray.count
     }
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        <#code#>
-    }
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        <#code#>
+//    }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCellWithIdentifier("supplyCell") as! SuppliesTableViewCell
+        let category = suppliesArray[indexPath.row]
+        cell.supplyCategoryLabel.text = category.name
+        return cell
     }
 
 }

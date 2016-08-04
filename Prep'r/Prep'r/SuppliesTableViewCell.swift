@@ -10,6 +10,8 @@ import UIKit
 
 class SuppliesTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var supplyCategoryLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
