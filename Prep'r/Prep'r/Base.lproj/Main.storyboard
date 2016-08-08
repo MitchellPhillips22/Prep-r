@@ -87,6 +87,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cI-kN-6ak">
+                                <rect key="frame" x="283" y="492" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -104,11 +108,13 @@
                             <constraint firstItem="qla-x4-bzD" firstAttribute="top" secondItem="vGV-Ox-D4C" secondAttribute="bottom" constant="20" id="bXZ-o1-orh"/>
                             <constraint firstItem="7ud-Lf-Glr" firstAttribute="leading" secondItem="v7b-lr-V0k" secondAttribute="trailing" constant="104" id="ct2-cY-d60"/>
                             <constraint firstItem="v7b-lr-V0k" firstAttribute="top" secondItem="Jzv-Y3-bty" secondAttribute="bottom" constant="20" id="hib-M2-ODH"/>
+                            <constraint firstItem="2cI-kN-6ak" firstAttribute="centerX" secondItem="qoa-qB-sMh" secondAttribute="centerX" id="hpq-yr-cAs"/>
                             <constraint firstItem="QWb-We-qOt" firstAttribute="leading" secondItem="Jzv-Y3-bty" secondAttribute="trailing" constant="89" id="j5d-60-uWQ"/>
                             <constraint firstItem="lRn-06-SP3" firstAttribute="top" secondItem="b3m-m6-bRQ" secondAttribute="bottom" constant="11" id="jUM-t6-zPn"/>
                             <constraint firstItem="v7b-lr-V0k" firstAttribute="leading" secondItem="qoa-qB-sMh" secondAttribute="leading" constant="20" id="mM5-Op-Lzo"/>
                             <constraint firstItem="vGV-Ox-D4C" firstAttribute="top" secondItem="xdj-3n-saR" secondAttribute="bottom" constant="20" id="o6Z-kh-cBf"/>
                             <constraint firstItem="7ud-Lf-Glr" firstAttribute="top" secondItem="QWb-We-qOt" secondAttribute="bottom" constant="11" id="pQv-bq-0gn"/>
+                            <constraint firstItem="4Vd-L8-ohw" firstAttribute="top" secondItem="2cI-kN-6ak" secondAttribute="bottom" constant="29" id="tFv-ce-uLK"/>
                             <constraint firstItem="xdj-3n-saR" firstAttribute="leading" secondItem="qoa-qB-sMh" secondAttribute="leading" constant="20" id="vlI-vn-xfk"/>
                         </constraints>
                     </view>
