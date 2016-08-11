@@ -12,6 +12,7 @@
 		1BEDC00C1D4EDB8B0010F2A0 /* SuppliesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEDC00B1D4EDB8B0010F2A0 /* SuppliesTableViewCell.swift */; };
 		1BEDC00E1D52D1E50010F2A0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEDC00D1D52D1E50010F2A0 /* CategoryViewController.swift */; };
 		1BEDC0101D52D2850010F2A0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEDC00F1D52D2850010F2A0 /* Category.swift */; };
+		1BEDC0361D5C1D090010F2A0 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEDC0351D5C1D090010F2A0 /* AddMemberViewController.swift */; };
 		1BFCE3FD1D49ADCB00053B44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCE3FC1D49ADCB00053B44 /* AppDelegate.swift */; };
 		1BFCE3FF1D49ADCB00053B44 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCE3FE1D49ADCB00053B44 /* FirstViewController.swift */; };
 		1BFCE4011D49ADCB00053B44 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCE4001D49ADCB00053B44 /* SecondViewController.swift */; };
@@ -26,6 +27,7 @@
 		1BEDC00B1D4EDB8B0010F2A0 /* SuppliesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuppliesTableViewCell.swift; sourceTree = "<group>"; };
 		1BEDC00D1D52D1E50010F2A0 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		1BEDC00F1D52D2850010F2A0 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1BEDC0351D5C1D090010F2A0 /* AddMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
 		1BFCE3F91D49ADCB00053B44 /* Prep'r.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prep'r.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFCE3FC1D49ADCB00053B44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BFCE3FE1D49ADCB00053B44 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				1BFCE4001D49ADCB00053B44 /* SecondViewController.swift */,
 				1BEDC0051D4EB0FC0010F2A0 /* SuppliesViewController.swift */,
 				1BEDC00D1D52D1E50010F2A0 /* CategoryViewController.swift */,
+				1BEDC0351D5C1D090010F2A0 /* AddMemberViewController.swift */,
 				1BEDC00A1D4EDB490010F2A0 /* Views */,
 				1BEDC0091D4ED8220010F2A0 /* Models */,
 				1BFCE4021D49ADCB00053B44 /* Main.storyboard */,
@@ -172,6 +175,7 @@
 				1BFCE4011D49ADCB00053B44 /* SecondViewController.swift in Sources */,
 				1BFCE3FD1D49ADCB00053B44 /* AppDelegate.swift in Sources */,
 				1BEDC00E1D52D1E50010F2A0 /* CategoryViewController.swift in Sources */,
+				1BEDC0361D5C1D090010F2A0 /* AddMemberViewController.swift in Sources */,
 				1BEDC0081D4ED81A0010F2A0 /* Supply.swift in Sources */,
 				1BEDC0061D4EB0FC0010F2A0 /* SuppliesViewController.swift in Sources */,
 				1BEDC00C1D4EDB8B0010F2A0 /* SuppliesTableViewCell.swift in Sources */,
