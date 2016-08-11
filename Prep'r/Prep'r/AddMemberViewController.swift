@@ -21,12 +21,23 @@ class AddMemberViewController: UIViewController {
     @IBOutlet weak var heightTextField: UITextField!
     
     @IBAction func saveMemberButton(sender: AnyObject) {
+        
+//        if saveMemberButton.selected == true {
+//            
+//        }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    
+    
+//    let nameInput = nameTextField.text
+    
+
+    
 
 }
