@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="787" y="-1716"/>
         </scene>
-        <!--View Controller-->
+        <!--Memebers View Controller-->
         <scene sceneID="iDG-yd-rJc">
             <objects>
-                <viewController id="dpt-iN-NgN" sceneMemberID="viewController">
+                <viewController id="dpt-iN-NgN" customClass="MemebersViewController" customModule="Prep_r" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ehz-ed-14P"/>
                         <viewControllerLayoutGuide type="bottom" id="FsV-mF-9qO"/>
