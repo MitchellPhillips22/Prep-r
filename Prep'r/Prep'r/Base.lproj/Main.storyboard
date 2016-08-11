@@ -47,6 +47,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWb-We-qOt">
+                                <rect key="frame" x="154" y="24" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="lNe-6H-bUj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday(MM/DD/YYYY)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ud-Lf-Glr">
                                 <rect key="frame" x="154" y="65" width="150" height="30"/>
                                 <constraints>
@@ -79,17 +87,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWb-We-qOt">
-                                <rect key="frame" x="154" y="24" width="150" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="lNe-6H-bUj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cI-kN-6ak">
                                 <rect key="frame" x="283" y="492" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveMemberButton:" destination="i4J-cD-TLu" eventType="touchUpInside" id="SXf-c5-iFl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -118,6 +121,13 @@
                             <constraint firstItem="xdj-3n-saR" firstAttribute="leading" secondItem="qoa-qB-sMh" secondAttribute="leading" constant="20" id="vlI-vn-xfk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bDayTextField" destination="7ud-Lf-Glr" id="4gP-Oo-qX8"/>
+                        <outlet property="heightTextField" destination="App-Af-tUl" id="61c-rl-2Ac"/>
+                        <outlet property="mfoTextField" destination="b3m-m6-bRQ" id="QUf-J8-abl"/>
+                        <outlet property="nameTextField" destination="QWb-We-qOt" id="FxC-y8-iZQ"/>
+                        <outlet property="weightTextField" destination="lRn-06-SP3" id="D2u-FS-9Zv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JlA-cW-vf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
